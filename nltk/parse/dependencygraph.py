@@ -122,7 +122,7 @@ class DependencyGraph(object):
         """
         :param file: a file in Malt-TAB format
         """
-        with open(file) as f:
+        with open(file, encoding='utf-8') as f:
             return DependencyGraph(f.read())
 
     @staticmethod
